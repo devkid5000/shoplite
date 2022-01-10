@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="shoplogin.css">
+    <link rel="stylesheet" href="shopspinner.css">
+</head>
+<body>
+
+    
+<form method="post" name="form" class="form" id="box" onsubmit="return validated()" >
+    <h1>soft-stores <hr></h1>
+
+    <input type="text" name="username" id="username" placeholder="user(Hint:chizaram)" title="Enter username here.(use: chizaram">
+    <div class="error_box" id="uerror">input username</div>
+    <input type="password" autocomplete="off" name="password" id="password" placeholder="password(Hint:xoft)" title="Enter password here.(use: xoft")>
+    <div class="error_box error_box2" id="perror"> input password</div>
+
+    <span id="invalidDet">invalid details! <button id="refreshBtn">try again</button></span>
+
+    <button title="Tap to login" id="loginBtn"> login</button>
+
+    
+
+    <span>Don't have an account? <button type="submit" title="tap to sign-up" class="signUp">sign-up</button>
+    </span>
+
+    
+</form>
+
+
+
+<h1 id="spinnerHeader">loading soft-stores!!!</h1>
+
+    <div id="wrapper">
+        <div id="spinner"></div>
+    </div>
+
+    
+
+    <script src="shoplogin.js"></script>
+</body>
+</html>

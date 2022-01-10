@@ -1,0 +1,1632 @@
+/* try styling this better to make that no white spaces appear again */
+
+/* also try to write js codes that will make the will make the menu links disappear when one of them is tapped */
+
+
+/* next task,  */
+/* try to make the divs.pattern divs equal  */
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+button {
+    transition: 0.85s;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border: 2.2px solid black;
+}
+
+header{
+    /* width: inherit; */
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    padding: 1.2rem;
+}
+
+.name {
+    width: 80%;
+    text-align: center;
+    margin-left: none;
+    /* background-color: violet; */
+}
+
+.name i {
+    /* margin-left: 3rem; */
+    font-size: x-large;
+    color: green;
+}
+
+.name span {
+    font-size: x-large;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.example {
+    /* background-color: purple; */
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+form input[type=text] {
+    border: 0.15rem solid green;
+    border-left-color: none;
+    width: 70%;
+    margin-right: -0.30rem;
+    /* padding-top: 0.3rem;
+    padding-bottom: 0.3rem; */
+}
+
+form button {
+    background-color: white;
+    margin-left: none;
+    border: 0.15rem solid green;
+    background-color: green;
+}
+
+.srchIcon i {
+    color: white;
+}
+
+.navig {
+    /* display: flex; */
+    background-color: whitesmoke;
+    padding: 0.6rem;
+    padding-right: 0.4rem;
+    position: sticky;
+    top: 0;
+
+    /* try checking out what the below code would have actually done  */
+    /* left: 0;
+    margin-top: 0%; */
+}
+
+nav {
+    display: none;
+}
+
+/* the REMOVE/CLOSE button  */
+.xHolder {
+    display: none;
+    margin-left: 1.1rem;
+    font-size: xx-large;
+}
+
+#closure {
+    /* note the fact that u dont have to set the display property  */
+    /* display: none; */
+    /* margin: auto;
+    margin-left: 1.5rem;
+    margin-right: 60%; */
+    color: red;
+    transition: 0.7s;
+}
+
+#closure:hover {
+    color: black;
+}
+
+.menu {
+    /* display: block; */
+    margin: auto;
+    margin-left: 1.1rem;
+    background-color: lime;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 900;
+    border: 2.4px solid black;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transition: 0.7s;
+}
+
+.menu:hover {
+    color: white;
+    background-color: black;
+}
+
+.menu + span {
+    
+    width: 20%;
+    margin-left: 34%;
+}
+
+.menu + span i {
+    margin-left: 0.6rem;
+}
+
+.navIcons {
+    color: green;
+}
+
+.nutsy {
+    display: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* list-style-type: none;
+    margin-left: -2.7rem; */
+}
+
+ul a {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: lime;
+    margin-bottom: 0.5rem;
+    margin-left: -2.4rem;
+    color: black;
+    transition: 0.7s;
+}
+
+ul a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* ul li {
+    background-color: lime;
+    padding-left: 39.5%;
+    text-transform: capitalize;
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+    transition: 0.55s;
+} */
+
+/* ul li:hover {
+    background-color: black;
+    text-decoration-color: white;
+} */
+
+/* .nutsy ul li a{
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    font-weight: 900;
+    
+} */
+
+#getStarted {
+    background-color: rgb(193, 210, 241);
+    padding-bottom: 1.4rem;
+}
+
+#getS1 {
+    text-align: center;
+}
+
+#topSpan span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#topSpan span:nth-child(2) {
+    font-size: 2.3rem;
+}
+
+#topSpan button {
+    font-size: larger;
+    background-color: lime;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: 2.8px solid black;
+    text-transform: capitalize;
+    transition: 0.7s;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+#topSpan button:hover {
+    color: white;
+    background-color: black;
+}
+
+.offerPDiv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    background: rgba(244, 244, 245, 0.7);
+    /* background-color: inherit; */
+}
+
+.offerPDiv div span:first-child {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.offerPDiv img {
+    width: 50%;
+    background-size: cover;
+    
+}
+
+.offersPGraph {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    padding-top: 15%;
+    /* background-position: right; */
+    /* margin-left: 10%; */
+    /* position: relative; */
+}
+
+.offersPGraph span {
+    margin-bottom: 0.35rem;
+    /* font-size: 0.85rem; */
+}
+
+/* .offersPGraph span:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.offersPGraph span:nth-child(2)  {
+    font-size: smaller;
+} */
+
+.offersPGraph + img:hover {
+    width: 52%;
+}
+
+.offersPGraph button {
+    width: 80%;
+    text-transform: capitalize;
+    margin: auto;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    background-color: lime;
+    font-weight: bolder;
+    border: 2.5px solid black;
+}
+
+
+.offersPGraph button:hover {
+    background-color: black;
+}
+     /* input started here  */
+
+     /* ended here  */
+     /* ################ styling the category section  */
+
+     #getStarted + h1 {
+         text-align: center;
+         font-size: 1.7rem;
+         text-transform: capitalize;
+         font-weight: bold;
+     }
+
+     #getStarted + h1 + hr {
+         width: 60%;
+         margin: auto;
+         height: 0.08rem;
+         background-color: black;
+         margin-bottom: 1.7rem;
+     }
+
+     #cate div {
+        display: flex;
+        flex-direction: column;
+        border: 0.25rem solid lime;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1.3rem;
+        text-align: center;
+        border-top-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+     }
+
+     #cate div h2 {
+         font-size: 2.3rem;
+         text-transform: capitalize;
+         /* background-color: mediumblue; */
+         margin-bottom: 0.7rem;
+     }
+
+     #cate div h2 + span {
+         font-size: 1.7rem;
+         margin-bottom: 1.7rem;
+         text-transform: capitalize;
+     }
+
+     #cate div img {
+         margin-bottom: 1.3rem;
+     }
+
+     #cate div button {
+         width: 70%;
+         font-size: 1.4rem;
+         text-transform: capitalize;
+         font-weight: bold;
+         background-color: lime;
+         border: 0.18rem solid black;
+         margin: auto;
+         margin-bottom: 1.4rem;
+         transition: 0.7s;
+     }
+
+     #cate div button:hover {
+         color: white;
+         background-color: black;
+     }
+
+     #cate + h1 {
+         text-transform: capitalize;
+         text-align: center;
+     }
+
+     #cate + h1 + hr {
+         width: 50%;
+         margin: auto;
+         margin-bottom: 1.9rem;
+         height: 0.12rem;
+         background-color: black;
+     }
+
+     #productDivs {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         width: 100%;
+     }
+
+     .pattern {
+         /* text-align: center; */
+         width: 40%;
+         border: 2px solid green;
+         border-radius: 1.3rem;
+         margin: auto;
+         padding-top: 0.8rem;
+         overflow: hidden;
+         flex-wrap: wrap;
+         margin-bottom: 1.5rem;
+         border-radius: 2rem;
+     }
+
+     .pattern span:first-child {
+        position: absolute;
+        z-index: -1;
+        width: 10%;
+        text-align: center;
+        background-color: rgb(174, 228, 174);
+        font-weight: bold;
+        overflow: visible;
+
+        
+         /* top: 0; */
+         /* margin-top: 20%; */
+         margin-left: 0.9rem;
+         /* left: 2%; */
+     }
+
+     .corrected {
+         display: flex;
+         flex-direction: row;
+         padding: auto;
+         padding-top: 5%;
+         padding-bottom: 5%;
+         /* background-color: orange; */
+     }
+
+     
+
+
+
+     .corrected img {
+         /* position: absolute; */
+         /* text-align: center; */
+         width: 50%;
+         margin: auto;
+         margin-left: 25%;
+         /* margin-right: 100px; */
+         transition: all 0.5s ease;
+     }
+
+     /* #nextToSide {
+         margin-right: 100px;
+     } */
+
+     /* .corrected img:hover {
+         margin-right: 0px;
+     } */
+
+     /* .corrected img + span {
+         display: flex;
+         flex-direction: column;
+         
+         margin-top: auto;
+         margin-bottom: auto;
+         padding: 0.4rem;
+     } */
+
+     .sideIcon {
+        display: inline-block;
+        text-align: center;
+        flex-direction: column;
+         margin-left: 100px;
+         transition: 0.7s;
+         /* background-color: orange; */
+
+     }
+     
+     .sideIcon i {
+        color: black;
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+        background-color: lightgray;
+        text-align: center;
+        border-radius: 50%;
+        padding: 0.2rem;
+     }
+
+     .captor {
+         display: block;
+         text-align: center;
+         text-transform: capitalize;
+         font-size: 1.2rem;
+         font-weight: bolder;
+         margin-bottom: 0.8rem;
+     }
+
+     .stars {
+         display: block;
+         text-align: center;
+         margin-bottom: 0.7rem;
+     }
+
+     .stars i {
+         color: rgb(219, 219, 15);
+     }
+
+     .stars + span {
+         display: block;
+         text-align: center;
+         font-size: 1.3rem;
+         font-weight: bold;
+     }
+
+     .slashing {
+         font-size: 0.8rem;
+         text-decoration: line-through;
+         font-weight: lighter;
+     }
+
+     #formzy {
+         margin-top: 0.8rem;
+         text-align: center;
+         /* padding: auto; */
+     }
+
+     #formzy label {
+        font-size: 1.15rem;
+        text-transform: capitalize;
+        font-weight: bolder;
+        /* margin-bottom: 0.9rem; */
+    }
+
+     #formzy input {
+         /* display: block; */
+         width: 30%;
+         border: 2px solid black;
+         margin-top: 0.5rem;
+     }
+
+     #formzy input + sub {
+         font-size: 1.3rem;
+     }
+
+     #formzy button {
+         display: block;
+         width: 80%;
+         color: white;
+         font-size: 0.8rem;
+         font-weight: bolder;
+         margin: auto;
+         margin-top: 0.7rem;
+         margin-bottom: 1rem;
+     }
+
+     /* show side icon of the pattern  */
+     .showSideIcon {
+         margin-left: -35%;
+     }
+
+     #deal h2 {
+         margin-left: 2rem;
+         margin-bottom: 0rem;
+     }
+
+     #deal h2 + hr {
+         width: 80%;
+         margin-left: 2rem;
+     }
+
+     #deal p {
+        width: 80%;
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+
+    /* #javasWork {
+        margin-left: 2rem;
+        width: 80%;
+    } */
+
+    /* countdown starts */
+    #tube {
+        width: 100%;
+        /* height: 12rem; */
+        background-color: #f6f6f6;
+        /* background-color: #0000ff; */
+        text-align: center;
+        /* padding-left: -2rem; */
+        /* padding-left: 0.2rem; */
+        /* margin-left: 0.3rem; */
+    }
+
+    .countdownContainer {
+        /* margin-top: 3rem; */
+        /* margin-left: 4rem; */
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        background: #ddd;
+        border: 1px solid #999;
+        padding: 5px;
+        box-shadow: 0 0 5px 3px #ccc;
+    }
+
+    /* .info {
+        font-size: 10px;
+    } */
+
+    /* .numbs {
+        font-size: 1.9rem;
+    } */
+
+    #tube + button {
+        border: 1.9px solid black;
+        background-color: lime;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1.8rem;
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+
+    #tube + button:hover {
+        background-color: black;
+    }
+
+    /* #contact {
+        text-align: center;
+    } */
+
+    #contact h2 {
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    #contact h2 {
+        margin-bottom: 0rem;
+    }
+
+    #contact hr {
+        width: 40%;
+    }
+
+    #form2 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: darkgray;
+        padding-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* text-align: center; */
+    }
+
+    #form2 input {
+        height: 1.7rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 0.5rem;
+        border: 2.2px solid grey;
+    }
+
+    #form2 textarea {
+        width: 80%;
+        height: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.7rem;
+    }
+
+    #form2 button {
+        width: 50%;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.7rem;
+        color: white;
+    }
+
+    #form2 + h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    #subEntry {
+        width: 80%;
+        background-color: grey;
+        text-align: center;
+        padding-top: 0.35rem;
+        padding-bottom: 0.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+
+    #subEntry input {
+        width: 70%;
+        margin-right: 0rem;
+    }
+
+    #subEntry button {
+        margin-left: -1rem;
+        background-color: rgb(3, 156, 3);
+        font-weight: bolder;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #unique h5 i {
+        font-size: 1.45rem;
+        color: green;
+    }
+
+    #unique h5 i + span {
+        font-size: 1.4rem;
+    }
+
+    footer div {
+        width: 40%;
+        /* height: 15rem; */
+        margin: auto;
+        margin-bottom: 1rem;
+        /* background-color: blue; */
+    }
+
+    #medias i {
+        font-size: 0.8rem;
+        background-color: green;
+        color: white;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .generals {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h5{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        margin-bottom: 0.4rem;
+    }
+
+    .generals h5 {
+        color: red;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+
+    .generals span {
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+    }
+
+    .generals span:hover {
+        color: purple;
+    }
+
+    .generals a {
+        color: black;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .generals a:hover {
+        font-size: large;
+        font-weight: bold;
+        color: rgb(3, 156, 3);
+    }
+
+    footer section {
+        display: block;
+        width: 90%;
+    }
+
+    #designer {
+        text-align: center;
+        background-color: rgb(148, 148, 148);
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-bottom: 1rem; */
+    }
+
+    #designer span {
+        text-transform: capitalize;
+        /* font-size: large; */
+    }
+
+    #me {
+        margin-right: 4px;
+    }
+
+    #me + span {
+        color: crimson;
+        font-size: larger;
+    }
+
+     /* style the products properly on each media query to ensure a smooth and nice display  */
+
+    
+
+
+@media only screen and (min-width : 750px) {
+   
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header 
+     {
+        display: flex;
+        flex-direction: row;
+     }
+
+     .name {
+         text-align: left;
+         margin-left: 1rem;
+         
+         /* background-color: blue; */
+     }
+
+     .navig {
+         display: flex;
+         flex-direction: row;
+         padding: 1.2rem;
+         /* work on the buttons to see to it that none of them displays at the various screen resolution  */
+     }
+
+     nav {
+         display: contents;
+         width: 60%;
+         /* margin-right: ; */
+         /* background-color: blue; */
+     }
+
+     .xHolder {
+         display: none;
+     }
+
+     nav a {
+         font-size: 1.4rem;
+         text-transform: capitalize;
+         color: black;
+         text-decoration: none;
+         margin-left: 2%;
+         transition: 0.7s;
+     }
+
+     nav a:hover {
+         color: white;
+         background-color: rgb(7, 185, 7);
+     }
+
+     .navIcons {
+         display: contents;
+         justify-content: right;
+         width: 20%;
+         margin-left: -8%;
+     }
+
+     .navIcons i:first-child {
+        margin-left: -40%;
+     }
+
+     .menu {
+         display: none;
+     }
+
+     .nutsy {
+         display: none;
+     }
+
+     form input[type=text] {
+        margin-left: 15%;
+     }
+
+     .example {
+         margin-right: 0.5rem;
+     }
+
+     /* you can target get started here  */
+
+     /* try finding out why the overscroll issue came up again when you moved the below css code to the top  */
+
+     #getS1 {
+        display: flex;
+        flex-direction: row;
+        
+     }
+
+     #getS1 img {
+         width: 80%;
+     }
+
+     #topSpan {
+         display: inline;
+         width: 50%;
+         padding-top: 12rem;
+         text-align: left;
+     }
+     /* ###################################### */
+     #offers {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .offerPDiv {
+         margin: 2%;
+     }
+
+     .offersPGraph {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+        padding-top: 7rem;
+        margin-left: 8%;
+    }
+
+    /* .offersPGraph span:first-child {
+        font-size: 3rem;
+    } */
+
+    .offerPDiv img {
+        width: 70%;
+    }
+
+    /* ############## category section below  */
+
+    #cate {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cate div {
+        width: 20%;
+    }
+
+    #cate div h2 {
+        font-size: 1.5rem
+    }
+
+    #cate div h2 + span {
+        font-size: 1.2rem;
+    }
+
+    .pattern {
+        /* height: 30rem; */
+        width: 30%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .pattern span:first-child {
+        padding: 0.2rem;
+    }
+
+    .captor {
+        font-size: 1.5rem;
+    }
+
+    .stars {
+        font-size: 1.3rem;
+    }
+
+    #deal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    #deal h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0rem;
+    }
+
+    #deal h2 + hr {
+        width: 30%;
+        margin-left: 0rem;
+        height: 0.15rem;
+        background-color: black;
+    }
+    
+    #deal p {
+        font-size: 1.7rem;
+        padding-right: 30%;
+    }
+    
+    #deal h2 {
+        width: 25rem;
+        text-align: left;
+        margin-left: -0.1rem;
+    }
+    
+    #medias i {
+        font-size: 1.7rem;
+        color: white;
+        margin-right: 0.5rem;
+        background-color: green;
+    }
+    
+    /* #javasWork {
+        display: flex;
+        flex-direction: row;
+        height: 10rem;
+        width: 28rem;
+        padding: auto;
+    }
+    
+    #javasWork div {
+        height: 7rem;
+        width: 5rem;
+        margin: auto 0.5rem;
+        margin-left: 1.4rem;
+        background-color: orange;
+    }
+    
+    #javasWork div:first-child {
+        margin-left: 0rem;
+    } */
+    
+    /* counter function starts */
+    #tube {
+        width: 100%;
+        background-color: #f6f6f6;
+    }
+    .countdownContainer {
+        /* position: absolute; */
+        margin-top: 5rem;
+        text-align: center;
+        /* margin-left: 18rem; */
+        /* transform: translateX(-50%) translateY(-50%); */
+        text-align: center;
+        background: #ddd;
+        border: 1px solid #999;
+        padding: 10px;
+        box-shadow: 0 0 5px 3px #ccc;
+    }
+    
+    
+    .info {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .numbs {
+        font-size: 2.8rem;
+    }
+
+    .numbs + tr {
+        font-size: 1.6rem;
+    }
+
+    #deal button {
+        width: 20%;
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+
+    #deal button:hover {
+        background-color: black;
+    }
+
+
+
+
+    /* .numbs {
+        font-size: 3rem;
+    }  */
+    /* counter function ends
+    
+    #deal button {
+        width: 10rem;
+        height: 2.2rem;
+        margin-left: 2rem;
+        margin-top: 1.55rem;
+        background-color: lime;
+        font-size: 1.2rem;
+        border: 1.2px solid black;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    #contact h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0rem;
+    }
+
+    /* #contact h2 hr {
+        margin-top: 0rem;
+        text-align: center;
+    } */
+
+
+
+    #form2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 100%; */
+    }
+
+    #form2 input {
+        width: 45%;
+        margin-bottom: 1rem;
+        /* margin-right: 0rem; */
+    }
+
+    #form2 textarea {
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #form2 button {
+        display: block;
+        width: 30%;
+        font-size: 0.85rem;
+        text-transform: capitalize;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+
+    #form2 + h1 {
+        font-size: 1.8rem;
+    }
+
+    #subEntry {
+        width: 50%;
+    }
+
+    footer div {
+        width: 20%;
+    }
+
+    #medias i {
+        font-size: smaller;
+    }
+
+    #designer {
+        width: 60%;
+    }
+
+
+    
+
+    /* #deal p {
+        font-size: 1.3rem;
+    } */
+
+    /* .sideIcon {
+        margin-right: 5%;
+    } */
+
+}
+
+
+/* other medias  */
+
+@media (min-width : 260px) and (max-width: 359px) {
+     body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    #getS1 img {
+        width: 100%;
+    }
+
+    .navIcons i:first-child {
+        margin-left: -7%;
+     }
+
+     #deal {
+        width: 100%;
+    }
+
+    #deal p {
+        font-size: 1.3rem;
+    }
+
+    .countdownContainer {
+        /* width: 60%; */
+        /* position: absolute; */
+        /* width: 50%; */
+        margin-top: 5rem;
+        margin: auto;
+        /* margin-left: 18rem; */
+        /* transform: translateX(-50%) translateY(-50%); */
+        text-align: center;
+        background: #ddd;
+        border: 1px solid #999;
+        /* padding: 10px; */
+        box-shadow: 0 0 5px 3px #ccc;
+    }
+
+
+    /* #form2 button {
+        width: 60%;
+    } */
+    /* .info {
+        font-size: 0.8rem;
+    } */
+     /* .offerPDiv img {
+
+     } */
+}
+
+@media (min-width : 360px) and (max-width: 499px) {
+     body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .navIcons {
+        color: green;
+        font-size: large;
+    }
+
+    /* #getS1 img {
+        width: 10rem;
+        background-color: blue;
+    } */
+
+    /* try commenting the immediate below code as their is no functionality being observed */
+    .menu + span  {
+        margin-left: 30%;
+        /* background-color: blue; */
+    }
+
+    .menu + span > i {
+        margin-left: 1.1rem;
+    }
+
+    .navIcons i:first-child {
+        margin-left: 3.5%;
+     }
+
+     #formzy input {
+         width: 20%;
+     }
+
+     .pattern {
+         border-radius: 2rem;
+     }
+
+     #tube {
+        width: 100%;
+        /* height: 20rem; */
+        background-color: #f6f6f6;
+        /* text-align: center; */
+    }
+    .countdownContainer {
+        /* width: 60%; */
+        /* position: absolute; */
+        margin-top: 5rem;
+        margin: auto;
+        /* margin-left: 18rem; */
+        /* transform: translateX(-50%) translateY(-50%); */
+        text-align: center;
+        background: #ddd;
+        border: 1px solid #999;
+        /* padding: 10px; */
+        box-shadow: 0 0 5px 3px #ccc;
+    }
+    
+    
+    /* .info {
+        font-size: 10px;
+    }
+    .numbs {
+        font-size: 3rem;
+    } */
+    /* counter function ends */
+    
+    #deal button {
+        width: 10rem;
+        height: 2.2rem;
+        margin-left: 2rem;
+        margin-top: 1.55rem;
+        background-color: lime;
+        font-size: 1.2rem;
+        border: 1.2px solid black;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+     /* .sideIcon {
+         margin-left: 30%;
+     } */
+}
+
+@media (min-width : 500px) and (max-width: 749px) {
+     body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .navIcons > i {
+        color: green;
+        font-size: x-large;
+        margin-right: 0.7rem;
+    }
+
+    .navIcons i:first-child {
+        margin-left: 14%;
+     }
+
+     .offersPGraph {
+         padding-left: 6%;
+     }
+
+     .offersPGraph span:first-child {
+         font-size: 2.1rem;
+     }
+
+     .offersPGraph span:nth-child(2) {
+         font-size: larger;
+     }
+
+     .offersPGraph button {
+         font-size: larger;
+         font-weight: bolder;
+     }
+     /* ################# category section  */
+     #getStarted + h1 {
+         font-size: 2.5rem;
+     }
+
+     #getStarted + h1 + hr {
+         margin-bottom: 2.9rem;
+     }
+
+     #cate div {
+         width: 65%;
+         margin-bottom: 2.8rem;
+     }
+
+     .pattern {
+         border-radius: 2rem;
+     }
+
+     .sideIcon {
+         margin-right: 8%;
+     }
+
+     #tube {
+        width: 100%;
+        /* height: 20rem; */
+        background-color: #f6f6f6;
+        /* text-align: center; */
+    }
+    .countdownContainer {
+        /* position: absolute; */
+        margin-top: 5rem;
+        margin: auto;
+        /* margin-left: 18rem; */
+        /* transform: translateX(-50%) translateY(-50%); */
+        text-align: center;
+        background: #ddd;
+        border: 1px solid #999;
+        padding: 10px;
+        box-shadow: 0 0 5px 3px #ccc;
+    }
+    
+    
+    .info {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .numbs {
+        font-size: 2rem;
+    } 
+    /* counter function ends
+
+     /* #cate div h2 {
+        
+     } */
+
+}
+
+
+@media (min-width : 750px) and (max-width: 900px) {
+    .navIcons > i {
+        color: green;
+        font-size: x-large;
+        margin-right: 1.1rem;
+        /* margin-left: 2rem; */
+    }
+
+    .navIcons i:first-child {
+        margin-left: 16%;
+     }
+
+     #topSpan {
+         padding-top: 15%;
+     }
+
+     .offerPDiv img {
+         width: 50%;
+     }
+
+     .offersPGraph {
+        padding-top: 10%;
+        padding-left: 0rem;
+    }
+
+    .offersPGraph span:first-child {
+        font-size: 1.4rem;
+    }
+
+    .offersPGraph button {
+        margin-bottom: 2rem;
+    }
+
+    .sideIcon {
+        margin-right: 6%;
+    }
+
+    .pattern {
+        border-radius: 2rem;
+    }
+
+    /* ###################### category section below  */
+
+    #cate div button {
+        font-size: 0.8rem
+    }
+
+    #formzy button {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width : 900px) and (max-width: 1025px) {
+     body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .navIcons > i {
+        color: green;
+        font-size: x-large;
+        margin-right: 1.25rem;
+    }
+
+    .navIcons i:first-child {
+        margin-left: 15%;
+     }
+     /* #topSpan span:first-child {
+         background-color: blue;
+     } */
+
+     /* #topSpan button {
+         margin-bottom: ;
+     } */
+
+
+    .offersPGraph {
+        padding-top: 14%;
+        padding-left: 0rem;
+   }
+
+   .offersPGraph span:first-child {
+       font-size: 1.7rem;
+   }
+
+   .offersPGraph span:nth-child(2) {
+       font-size: 1.5rem;
+   }
+
+   .offersPGraph button {
+       font-size: 1.2;
+       margin-bottom: 2.5rem;
+   }
+
+   .offerPDiv img {
+    width: 50%;
+}
+    /* ################### category section  */
+
+    #cate div button {
+        font-size: 0.9rem;
+        width: 60%;
+    }
+
+    .pattern {
+        height: 24rem;
+        border-radius: 2rem;
+        /* margin-bottom: 0rem; */
+    }
+
+    .stars + span {
+        font-size: 1.7rem;
+    }
+
+    .slashing {
+        font-size: 1.1rem;
+    }
+
+    .sideIcon {
+        margin-right: 6%;
+    }
+
+    .sideIcon i {
+        font-size: 1.4rem;
+    }
+
+    #formzy button {
+        font-size: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+
+@media (min-width : 1025px) {
+
+     body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    }
+
+    .navIcons > i {
+        color: green;
+        font-size: x-large;
+        margin-right: 1.35rem;
+    }
+
+    .navIcons i:first-child {
+        color: green;
+        margin-left: 34%;
+     }
+
+     #topSpan {
+         padding-top: 24%;
+     }
+
+     #topSpan button {
+         margin-bottom: 3rem;
+     }
+
+    .offersPGraph {
+       padding-left: 2%;
+   }
+
+    .offersPGraph span:first-child {
+        font-size: 2rem;
+    }
+
+    .offersPGraph span:nth-child(2) {
+        font-size: 1.7rem;
+    }
+
+    .offersPGraph button {
+        font-size: 1.2rem;
+        margin-bottom: 1.35rem;
+    }
+
+    .offerPDiv img {
+        width: 50%;
+    }
+
+    .pattern {
+        height: 30rem;
+        border-radius: 2rem;
+    }
+
+    .captor {
+        font-size: 2.1rem;
+    }
+
+    .stars + span {
+        font-size: 1.7rem;
+    }
+
+    .slashing {
+        font-size: 1.1rem;
+    }
+
+    .sideIcon {
+        margin-right: 7%;
+    }
+
+    .sideIcon i {
+        font-size: 1.7rem;
+    }
+
+    #formzy button {
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-top: 8%;
+        margin-bottom: 2%;
+    }
+
+}
